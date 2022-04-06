@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <title>POKEDEX LAUNCH</title>
+</head>
+<body>
+    <header>
+            <img src="./img/pokemon-logo.png" alt="Pokemon" class="logo_pokemon">
+    </header>
+
+    <div class="pokedex">
+        <div class="busqueda">
+            <input type="search" placeholder="pokemon o número" id="pokeName" name="pokeName" class="pokeName">
+        </div>
+        <div class="imgPokebola">
+            <img src="./img/pokeball.png" alt="Pokemon" id="pokeImg" class="pokebola">
+            <!--<img src="./img/pokeball.png" alt="" class="pokebola" id="pokeImg2">-->
+        </div>
+        <div class="botones">
+            <button onclick="fetchPokemon()">Pokémon</button>
+            <button onclick="">Shiny</button>
+        </div>
+        
+        <div class="numero_nombre">
+            <label id="idPokemon"># Pokemon</label>
+            <label id="nomPokemon"> Nombre Pokemon</label>
+        </div>
+        <div class="infobasica">
+            <label id="alturaPokemon">Altura</label>
+            <label id="pesoPokemon">Peso</label>
+            <label id="tipoPokemon">Que tipo eres?</label>
+        </div>
+        <div class="habilidades">
+            <dl class="stat">
+                <p>HP <meter min="0" max="100" low="25" high="75" optimum="100" value="56" id="HP"></meter><p>56</p></p>
+            </dl>
+            <dl class="stat">
+                <p>Ataq <meter min="0" max="100" low="25" high="75" optimum="100" value="29" id="Ataque"></meter><p>29</p></p>
+            </dl>
+            <dl class="stat">
+                <p>Def <meter min="0" max="100" low="25" high="75" optimum="100" value="80" id="Defensa"></meter><p>80</p></p>
+            </dl>
+            <dl class="stat">
+                <p>Ataq Esp <meter min="0" max="100" low="25" high="75" optimum="100" value="30" id="AtqEspecial"></meter><p>30</p></p>
+            </dl>
+            <dl class="stat">
+                <p>Def Esp <meter min="0" max="100" low="25" high="75" optimum="100" value="75" id="defEspecial"></meter><p>75</p></p>
+            </dl>
+            <dl class="stat">
+                <p>Vel <meter min="0" max="100" low="25" high="75" optimum="100" value="75" id="Velocidad"></meter><p>75</p></p>
+            </dl>            
+        </div>
+        <div class="botones_imagen">
+            <img src="./img/cruceta.png" alt="flechas" class="botones_img">
+            <img src="./img/botones.png" alt="botonera" class="botones_img">
+        </div>
+    </div>
+    <footer>Soy un footer
+        <script src="./pokedex.js"></script>
+    </footer>
+</body>
+</html>
